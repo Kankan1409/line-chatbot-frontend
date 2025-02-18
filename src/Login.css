@@ -1,0 +1,82 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background-image: url("asset/images/bg.png");
+  background-size: cover;
+}
+
+.content {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.form-group input {
+  width: 100%;
+  /* ให้ input ใช้ความกว้าง 100% */
+}
+
+.button .submit,
+.button .cancel {
+  width: 25%;
+}
+
+@media (min-width: 601px) {
+
+  .submit,
+  .cancel {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .text-contant {
+    font-size: 20px;
+  }
+}
+
+.header-login {
+  font-size: 15px;
+}
+
+.header h2 {
+  margin: 0 0 10px;
+}
+
+.body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.body input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.body button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.body button:hover {
+  background-color: #0056b3;
+}
+
+.body .login {
+  font-size: 15px;
+}

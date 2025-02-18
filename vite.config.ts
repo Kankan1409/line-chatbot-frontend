@@ -8,7 +8,7 @@ export default defineConfig({
     allowedHosts: [
       'localhost',
       '127.0.0.1',
-      'nice-becoming-drake.ngrok-free.app' // ✅ เพิ่ม ngrok domain
+      'badger-leading-bee.ngrok-free.app' // ✅ เพิ่ม ngrok domain
     ],
     cors: true
   }

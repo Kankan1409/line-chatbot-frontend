@@ -1,0 +1,188 @@
+/* ตั้งค่าพื้นหลัง */
+.booking-container {
+    min-height: 100vh;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+  }
+  
+  .booking {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* หัวข้อ */
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* ส่วนกรอง */
+  .filter-container {
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-container label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .filter-container select,
+  .filter-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #fff;
+    transition: 0.3s;
+  }
+  
+  .filter-container select:focus,
+  .filter-container input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* ตาราง */
+  .booking-table {
+    width: 100%;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-collapse: collapse;
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+  }
+  
+  .booking-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .booking-table td {
+    background: #fff;
+    text-align: center;
+  }
+  
+  /* ข้อความเมื่อไม่มีข้อมูล */
+  .no-records {
+    text-align: center;
+    color: #888;
+    font-size: 15px;
+    padding: 20px;
+    font-style: italic;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 14px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .pagination select {
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  .pagination button {
+    padding: 8px 14px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  
+  .pagination button:hover {
+    background: #0056b3;
+  }
+  
+  .pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .booking {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .filter-container,
+    .booking-table,
+    .pagination {
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .filter-container select,
+    .filter-container input {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .booking-table th,
+    .booking-table td {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .pagination {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .pagination select {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .pagination button {
+      width: 100%;
+    }
+  }
+  

@@ -5,13 +5,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "ngrok": "ngrok http --domain=nice-becoming-drake.ngrok-free.app 5173"
+    "ngrok": "ngrok http --domain=badger-leading-bee.ngrok-free.app 5173"
   },
   "dependencies": {
     "@line/liff": "2.25.1",
+    "next": "^15.2.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-router-dom": "^7.1.5"
+    "react-router-dom": "^7.1.5",
+    "swiper": "^11.2.5"
   },
   "devDependencies": {
     "@types/react": "19.0.8",

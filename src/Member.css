@@ -1,0 +1,65 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url("asset/images/bg.png");
+    background-size: cover;
+}
+
+.content {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.form-group input {
+    width: 100%;
+    /* ให้ input ใช้ความกว้าง 100% */
+}
+
+.button .submit,
+.button .cancel {
+    width: 25%;
+}
+
+@media (min-width: 601px) {
+
+    .submit,
+    .cancel {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .text-contant {
+        font-size: 20px;
+    }
+}
+
+/* Media queries สำหรับอุปกรณ์ขนาดเล็ก */
+@media (max-width: 600px) {
+    .content {
+        padding: 15px;
+        /* ลด padding บนโทรศัพท์ */
+    }
+
+    .header p {
+        font-size: 15px;
+        /* ขนาดตัวอักษรสำหรับมือถือ */
+    }
+
+    .register {
+        font-size: 18px;
+        /* เพิ่มขนาดตัวอักษร */
+        padding: 10px;
+        /* ปรับ padding */
+    }
+}

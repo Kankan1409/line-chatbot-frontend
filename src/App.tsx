@@ -7,6 +7,7 @@ import Product from "./Product";
 // import Shop from "./pages/Shop"; // ตัวอย่างหน้าที่ต้องสร้าง
 // import Promo from "./pages/Promo";
 // import Store from "./pages/Store";
+import Order from "./Order";
 import Contact from "./Contact";
 import History from "./History/HistoryRes";
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/Topic" element={<Topic />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/Order" element={<Order />} />
         {/* <Route path="/shop" element={<Shop />} />
         <Route path="/promo" element={<Promo />} />
         <Route path="/store" element={<Store />} />

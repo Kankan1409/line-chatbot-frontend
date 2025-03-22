@@ -1,0 +1,463 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  font-size: 14px;
+}
+
+.topic-card {
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0px 4px 6px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.payment-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0 0 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.section {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-details {
+  margin-bottom: 15px;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.product-image {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.product-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-info {
+  flex: 2;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.product-info .price {
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-control button {
+  background-color: white;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-control button:hover {
+  background-color: #f0f0f0;
+}
+
+.quantity-control span {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.manage-address {
+  font-size: 14px;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.address-details {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.address-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.shipping-method {
+  display: flex;
+  flex-direction: column;
+}
+
+.shipping-method label {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.shipping-method label.selected {
+  border-color: #007bff;
+}
+
+.shipping-method label.selected input[type="radio"] {
+  accent-color: #007bff;
+}
+
+.shipping-method input {
+  margin-right: 10px;
+}
+
+.shipping-method .price {
+  margin-left: auto;
+  color: #333;
+  font-weight: bold;
+}
+
+.no-insurance {
+  font-size: 12px;
+  color: #888;
+  margin: 5px 0 0 25px;
+}
+
+.message-to-store {
+  margin-top: 15px;
+}
+
+.message-input {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.char-count {
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.payment-info {
+  margin-top: 15px;
+}
+
+.payment-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.payment-label {
+  font-size: 14px;
+}
+
+.payment-arrow {
+  font-size: 20px;
+}
+
+.payment-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.payment-option:hover {
+  background-color: #f0f0f0;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dialog-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dialog-buttons button:first-child {
+  background-color: #ddd;
+}
+
+.dialog-buttons button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.payment-summary {
+  margin-top: 15px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.price {
+  text-align: right;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  flex: 1;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bank-details {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.bank-details p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.coupon-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-dialog {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-dialog h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.coupon-type,
+.coupon-selection,
+.coupon-code {
+  margin-bottom: 15px;
+}
+
+.coupon-type label,
+.coupon-selection label,
+.coupon-code label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.coupon-type select,
+.coupon-selection select,
+.coupon-code input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.coupon-type select:focus,
+.coupon-selection select:focus,
+.coupon-code input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.coupon-selection,
+.coupon-code {
+  margin-top: 10px;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dialog-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-buttons button:first-child {
+  background-color: #ddd;
+  color: #333;
+}
+
+.dialog-buttons button:first-child:hover {
+  background-color: #ccc;
+}
+
+.dialog-buttons button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.dialog-buttons button:last-child:hover {
+  background-color: #0056b3;
+}

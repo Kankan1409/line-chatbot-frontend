@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import liff from "@line/liff";
 import "./Order.css";
-
+import Navbar from "./Navbar";
 // ประกาศ Type สำหรับข้อมูลสินค้า
 type Product = {
   id: number;
@@ -39,7 +39,7 @@ function Order() {
       description: "นน.2สลิง มีบัตรรับประกัน",
       details: "เป็นชุดกันน้ำ",
       weight: "0.008 kg.",
-      image: "https://via.placeholder.com/80",
+      image: "https://www.diarjewelry.com/wp-content/uploads/2023/02/gold-plated-diarjewelry-main-2023.webp",
       price: 500, // ราคาต่อชิ้น
       quantity: 1,
     },
@@ -49,7 +49,7 @@ function Order() {
       description: "ขนาดเล็ก น้ำหนักเบา",
       details: "กรองได้ 500 ลิตร",
       weight: "0.5 kg.",
-      image: "https://via.placeholder.com/80",
+      image: "https://down-th.img.susercontent.com/file/th-11134207-7qukx-lgn3ghid34z89b",
       price: 300, // ราคาต่อชิ้น
       quantity: 1,
     },
@@ -163,7 +163,9 @@ function Order() {
   };
 
   return (
-    <div className="topic-card">
+    <main>
+      <Navbar/>
+ <div className="topic-card">
       <h1 className="payment-title">จ่ายเงิน</h1>
 
       <div className="section order-details">
@@ -380,6 +382,8 @@ function Order() {
         <button>ยืนยัน</button>
       </div>
     </div>
+    </main>
+  
   );
 }
 

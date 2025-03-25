@@ -1,0 +1,158 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+/* ไอคอนรูปบ้าน */
+.home-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* ชื่อร้านตรงกลาง */
+.navbar-brand {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; /* ปรับขนาดลง */
+    font-weight: bold;
+}
+
+/* รูปโปรไฟล์หรือไอคอน 3 ขีด */
+.profile-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.profile-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* เมนูที่เลื่อนออกมาจากด้านซ้าย */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* ซ่อนเมนูไว้ด้านซ้าย */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.menu.open {
+    left: 0; /* แสดงเมนูเมื่อเปิด */
+}
+
+/* โลโก้และชื่อร้านในเมนู */
+.menu-header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.menu-logo {
+    width: 100px; /* ปรับขนาดโลโก้ให้พอดี */
+    height: auto; /* รักษาสัดส่วนภาพ */
+    margin-bottom: 10px;
+}
+
+.menu-title {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* ลิงก์เมนู */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.arrow {
+    font-size: 0.8rem;
+}
+
+/* เมนูย่อย */
+.sub-menu {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.sub-menu li {
+    padding: 5px 0;
+}
+
+.sub-menu li a {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Overlay สำหรับปิดเมนูเมื่อคลิกนอกพื้นที่ */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.menu-overlay.open {
+    display: block;
+}
+
+/* Navbar.css */
+/* ... (โค้ดเดิม) */
+
+/* รูปโปรไฟล์ */
+.profile-picture {
+    width: 40px; /* ปรับขนาดรูปโปรไฟล์ */
+    height: 40px;
+    border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+    margin-left: 10px; /* ระยะห่างจากไอคอน 3 ขีด */
+    cursor: pointer;
+}
+
+/* กลุ่มไอคอน 3 ขีดและรูปโปรไฟล์ */
+.profile-section {
+    display: flex;
+    align-items: center;
+}

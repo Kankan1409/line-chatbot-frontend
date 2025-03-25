@@ -2,7 +2,7 @@ import "./Topic.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from "react-router-dom";
-
+import Navbar from "./Navbar";
 const products = [
   {
     id: 1,
@@ -39,6 +39,7 @@ const menuItems = [
 const Topic = () => {
   return (
     <main>
+      <Navbar/>
       <div className="topic">
         <div className="topic-card">
           {/* รูปภาพ */}

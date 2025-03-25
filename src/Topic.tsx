@@ -2,7 +2,7 @@ import "./Topic.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from "react-router-dom";
-
+import Navbar from "./Navbar";
 const products = [
   {
     id: 1,
@@ -30,7 +30,7 @@ const menuItems = [
   { id: 3, name: "ร้านค้า", icon: "/asset/icons/store.png", to: "/store" },
   { id: 4, name: "แพ็กเกจพิเศษ", icon: "/asset/icons/package.png", to: "/package" },
   { id: 5, name: "คูปอง", icon: "/asset/icons/coupon.png", to: "/coupon" },
-  { id: 6, name: "ติดต่อเรา", icon: "/asset/icons/contact.png", to: "/contact" },
+  { id: 6, name: "ติดต่อเรา", icon: "/asset/icons/contact.png", to: "/Contact" },
   { id: 7, name: "ประวัติการแลกคะแนน", icon: "/asset/icons/package.png", to: "/history-points" },
   { id: 8, name: "รายการฝาก", icon: "/asset/icons/coupon.png", to: "/deposit" },
   { id: 9, name: "ประวัติการสั่งซื้อ", icon: "/asset/icons/contact.png", to: "/order-history" },
@@ -39,6 +39,7 @@ const menuItems = [
 const Topic = () => {
   return (
     <main>
+      <Navbar/>
       <div className="topic">
         <div className="topic-card">
           {/* รูปภาพ */}

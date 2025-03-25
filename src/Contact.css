@@ -1,0 +1,124 @@
+/* พื้นหลังหลัก */
+.contact-wrapper {
+    background: url('/asset/images/bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* กล่องข้อมูล */
+.contact-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* สีฟ้าอ่อนแบบพาสเทล */
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;  /* รองรับมือถือ */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ดูนุ่ม */
+    text-align: center;
+}
+
+
+/* ส่วนหัว */
+.contact-header {
+    background-color: #d4af37; /* สีทอง */
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.contact-header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+/* รูปภาพ */
+/* รูปภาพโลโก้ */
+.contact-image {
+    width: 150px;  /* ปรับขนาดให้เล็กลง */
+    height: 150px;  /* ให้คงอัตราส่วนเดิม */
+    display: block;
+    margin: 10px auto;  /* จัดให้อยู่ตรงกลาง */
+    border-radius: 10px;
+}
+
+
+/* เนื้อหา */
+.contact-content {
+    padding: 20px;
+}
+
+.contact-content h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* สไตล์ข้อความ */
+.contact-content p {
+    font-size: 16px;
+    color: #444;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ไอคอนในข้อความ */
+.contact-content p svg {
+    margin-right: 8px;
+    color: #000000; /* สีไอคอน */
+}
+
+/* ปรับสีไอคอนที่ใช้ในลิงก์ */
+.contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    transition: background 0.3s ease;
+}
+
+.contact-links a:hover {
+    background-color: #0056b3;
+}
+
+.contact-links a svg {
+    color: white;
+}
+
+/* Media Query สำหรับหน้าจอเล็ก (มือถือ) */
+@media screen and (max-width: 480px) {
+    .contact-container {
+        width: 95%;  /* ขยายเต็มหน้าจอมากขึ้น */
+        padding: 15px;
+    }
+
+    .contact-header h1 {
+        font-size: 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 18px;
+    }
+
+    .contact-content p {
+        font-size: 14px;
+    }
+
+    .contact-links a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
